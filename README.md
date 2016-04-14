@@ -1,5 +1,5 @@
 # dibreiAngular2
-studying
+Studying:
 * Angular 2
 * TypeScript
 * Ionic 2

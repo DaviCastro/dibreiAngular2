@@ -1,0 +1,26 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Times
+    </ion-title>
+</ion-navbar>
+
+<ion-content class="page3">
+
+
+
+    <ion-item-group *ngFor="#obj of times;#i=index ">
+
+        <ion-item-divider ><h2>Time {{i+1}} Nota {{obj.getNotaTotal()}}</h2> </ion-item-divider>
+        <ion-item *ngFor="#jogador of obj.jogadores | values">
+          
+    <h2>Nome: {{jogador.nome}}</h2>
+    <h3>Nota: {{jogador.nota}}</h3>
+   </ion-item>
+
+    </ion-item-group>
+
+    <button dark (click)="construirTimes()" fab fab-bottom fab-right>
+        <ion-icon name='add'></ion-icon>
+    </button>
+
+</ion-content>

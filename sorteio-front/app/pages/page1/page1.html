@@ -1,0 +1,74 @@
+<ion-navbar *navbar>
+    <ion-title>Jogadores</ion-title>
+</ion-navbar>
+
+<ion-content  padding class="page1">
+
+    <div>
+
+
+        <ion-list >
+
+            <ion-item-sliding *ngFor="#jogador of jogadores">
+                <ion-item>
+                    <div  item-left>
+
+                        {{jogador.nome}}
+
+                    </div>
+
+
+
+
+
+
+
+                  
+                       <ion-label>nota</ion-label>
+                         <ion-select item-right [(ngModel)]="jogador.nota">
+                        <ion-option value=1>1</ion-option>
+                        <ion-option value=2>2</ion-option>
+                        <ion-option value=3>3</ion-option>
+                        <ion-option value=4>4</ion-option>
+                        <ion-option value=5>5</ion-option>
+                        <ion-option value=6>6</ion-option>
+                        <ion-option value=7>7</ion-option>
+                        <ion-option value=8>8</ion-option>
+                        <ion-option value=9>9</ion-option>
+                        <ion-option value=10>10</ion-option>
+                       
+                    </ion-select>
+                
+                   
+
+
+
+
+
+
+
+                </ion-item>
+
+
+
+
+                <ion-item-options>
+                    <button danger (click)="removerJogador(jogador)">
+                        <ion-icon name="text"></ion-icon>
+                        Deletar
+                    </button>
+                </ion-item-options>
+            </ion-item-sliding>
+
+
+
+
+
+        </ion-list>
+        <button dark (click)="doPrompt()" fab fab-bottom fab-right>
+            <ion-icon name='add'></ion-icon>
+        </button>
+    </div>
+
+
+</ion-content>

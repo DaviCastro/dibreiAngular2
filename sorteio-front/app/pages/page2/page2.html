@@ -1,0 +1,55 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Configuração
+    </ion-title>
+</ion-navbar>
+
+<ion-content class="page2">
+
+
+    <ion-card>
+        <ion-card-content>
+            
+            <ion-label>
+                <h1>Jogadores por Time</h1></ion-label>
+            <ion-select [(ngModel)]="jogadoresPorTime">
+                <ion-option value=1>1</ion-option>
+                <ion-option value=2>2</ion-option>
+                <ion-option value=3>3</ion-option>
+                <ion-option value=4>4</ion-option>
+                <ion-option value=5>5</ion-option>
+                <ion-option value=6>6</ion-option>
+                <ion-option value=7>7</ion-option>
+                <ion-option value=8>8</ion-option>
+                <ion-option value=9>9</ion-option>
+                <ion-option value=10>10</ion-option>
+            </ion-select>
+        </ion-card-content>
+    </ion-card>
+
+
+    <ion-card>
+        <ion-card-header>
+            <ion-label>
+                <h1>Avulso</h1></ion-label>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-item>
+                
+                <ion-label>Avulso Medio </ion-label>
+                <ion-checkbox [(ngModel)]="avulsoMedio" dark></ion-checkbox>
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
+
+
+
+
+
+
+
+
+
+
+
+</ion-content>
